@@ -1,0 +1,56 @@
+Recursion
+
+Q. In your own words, what is recursion?
+A. Recursion is when a function calls itself on a smaller part of the original problem. Doing this, it can then piece the problem back together to get the final solution.
+
+Q. Why is it necessary to have a base case?
+A. A base case tells the recursive calls when to stop. Without a base case, the function might recurse forever!
+
+
+Graphs
+
+Q. What is a graph?
+A. A graph is a collection of nodes, connected by edges.
+
+Q. How is a graph different from a tree?
+A. A tree is a graph, but a graph can also have loops between nodes and nodes can have more than one parent.
+
+Q. Give an example of something that would be good to model with a graph.
+A. Food chain.
+
+
+Performance of Different Data Structures
+
+Fill in the runtimes for the following actions for the table below:
+
+Data Structure               Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List (Array)           O(1)    O(n)    O(1)    O(n)    O(n)    O(1)
+Linked List                   O(n)    O(n)    O(1)    O(1)    O(1)    O(n)
+Doubly-Linked List            O(n)    O(n)    O(1)    O(1)    O(1)    O(1)
+Queue (as Array)               X        X     O(1)     X      O(n)      X
+Queue (as LL or DLL)           X        X     O(1)     X      O(1)      X
+Stack (as Array, LL, or DLL)   X        X     O(1)     X       X      O(1)
+Deque (as DLL)                 X        X     O(1)    O(1)    O(1)    O(1)
+
+
+Fill in Runtime and Memory:
+
+The answers for dictionary have been provided; you should fill in the rest:
+
+Data Structure          Get     Add    Delete    Iterate    Memory
+Dictionary (Hash Map)   O(1)    O(1)    O(1)      O(n)      medium
+Set (Hash Map)          O(1)    O(1)    O(1)      O(n)      medium
+Binary Search Tree      O(logn) O(logn) O(logn)   O(n)      medium    
+Tree                    O(n)    O(n)    O(n)      O(1)      little
+
+
+Sorting
+
+Q. Describe in words how the Bubble Sort algorithm works.
+A. Bubble sort iterates through a list and compares each adjacent pair of items. If they are already correctly ordered, it leaves them and otherwise swaps them. This bubbles the highest numbers to the end of the list. Do this until the list is sorted.
+
+Q. Describe in words how the Merge Sort algorithm works.
+A. Merge sort splits the list in half, sorts each half (by calling itself) and then merges the two sorted halves. The base case is if the list is length 0 or 1, the list is already sorted so it gets returned right away.
+
+Q. Describe in words how the Quick Sort algorithm works.
+A. Quick sort chooses a random item in the list to pivot around. It moves all the numbers higher than the pivot to the right of it, and all the lower numbers to the left of it.
